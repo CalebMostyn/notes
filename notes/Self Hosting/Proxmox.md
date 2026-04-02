@@ -13,7 +13,6 @@ Running several services that benefit in ease of use (or installation) from runn
 Local IP address is `192.168.4.51`.
 
 ## Todo
-- PiHole for ad-blocking and DNS
 - Jellyfin for media streaming
 - Purchase quieter case fans
 - Purchase better router, managed switch
