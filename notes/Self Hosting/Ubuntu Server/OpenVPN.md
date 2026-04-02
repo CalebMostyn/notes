@@ -9,3 +9,9 @@ The script generates the client key files, so rerun it to add new clients. Gener
 Stored it off in `~/openvpn/openvpn-install.sh`.
 
 Had to port forward to default OpenVPN port (1194) in router.
+
+For setup on clients with NetworkManager:
+
+```bash
+sudo nmcli connection import type openvpn file /path/to/client.ovpn
+```
