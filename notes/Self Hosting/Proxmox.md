@@ -1,4 +1,4 @@
-Running single node with proxmox installed. Local IP address is `192.168.4.50`.
+Running single node made of old hardware with proxmox installed. Local IP address is `192.168.4.50`.
 
 Had to give server a reserved IP in the router so that it will be static.
 
@@ -16,3 +16,5 @@ Local IP address is `192.168.4.51`.
 - PiHole for ad-blocking and DNS
 - Jellyfin for media streaming
 - Purchase quieter case fans
+- Purchase better router, managed switch
+- Purchase spool of Cat6, passthrough RJ45s, passthrough crimping tool, cable tester
