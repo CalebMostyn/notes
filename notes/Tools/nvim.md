@@ -10,7 +10,8 @@
 - L : move to bottom of screen
 - U : highlight to uppercase
 - u : highlight to lowercase
-
+- Ctrl+a : increment number under cursor
+- Ctrl+x : decrement number under cursor
 ## Commands
 - :w : write file
 - :wq : write file and quit
