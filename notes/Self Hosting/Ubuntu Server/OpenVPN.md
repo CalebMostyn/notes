@@ -15,3 +15,8 @@ For setup on clients with NetworkManager:
 ```bash
 sudo nmcli connection import type openvpn file /path/to/client.ovpn
 ```
+
+Had to add option to `/etc/openvpn/server/server.conf` to ensure clients utilized the LAN's DNS:
+```
+push "dhcp-option DNS <Pi-Hole IP Address>"
+```

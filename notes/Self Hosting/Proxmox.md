@@ -12,6 +12,9 @@ Running several services that benefit in ease of use (or installation) from runn
 
 Local IP address is `192.168.4.51`.
 
+### [Pi-Hole](<Self Hosting/Pi-hole>)
+Ad-blocking and DNS, based on debian.
+
 ## Todo
 - Jellyfin for media streaming
 - Purchase quieter case fans
