@@ -1,4 +1,6 @@
-Fancy and new terminal emulator. Has very vast configuration options and transparent background support.
+Fancy and new terminal emulator. Has very vast configuration options and transparent background support. 
+
+GPU accelerated, unfortunately does not currently have a CPU render fallback so doesn't work easily on VMs.
 
 Had issue with prompt not being colored with default Ubuntu .bashrc ([fix](https://github.com/ghostty-org/ghostty/discussions/3537)).
 
