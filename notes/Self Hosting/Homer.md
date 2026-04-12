@@ -1,0 +1,1 @@
+Simple static homepage server that is created via yaml. Hosting a dashboard with links for all of my homepages to simplify the bookmarking issue. Link to [dashboard](http://192.168.4.96:8010/).
