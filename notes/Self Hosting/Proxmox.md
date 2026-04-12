@@ -15,8 +15,12 @@ Local IP address is `192.168.4.51`.
 ### [Pi-Hole](<Self Hosting/Pi-hole>)
 Ad-blocking and DNS, based on debian.
 
+### [[Jellyfin]]
+Self-hosted media streaming
+
+### [[qBittorrent]]
+For fetching things for [[Jellyfin]].
 ## Todo
-- Jellyfin for media streaming
 - Purchase quieter case fans
 - Purchase better router, managed switch
 - Purchase spool of Cat6, passthrough RJ45s, passthrough crimping tool, cable tester

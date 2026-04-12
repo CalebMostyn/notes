@@ -1,0 +1,1 @@
+Automatic torrent downloading and indexing for movies. Just add a movie and should download with [[qBittorrent]] and manage the files for [[Jellyfin]]. Torrent indexing is provided by [[Prowlarr]]. Link to [dashboard](http://192.168.4.92:7878/)

@@ -1,0 +1,50 @@
+Installation doesn't have to be scary. Mostly just follow the [guide](https://wiki.archlinux.org/title/Installation_guide).
+
+## What the guide doesn't tell you
+- `cfdisk` is nicer than `fdisk`
+	- UEFI system -> gpt
+	- Partitions I normally setup:
+		- /dev/sda1 - boot partition - 1GB
+			- guide calls the "efi_system_partition"
+		- /dev/sda2 - swap partition - 4GB
+		- /dev/sda3 - file system - rest of whats available
+			- guide calls the "root_partition"
+	- `lsblk` shows partitions
+- Formatting partitions
+	- file system
+		- root_partition -> ext4
+	- boot partition
+		-  efi_system_partition -> efi
+		- mount to /mnt/boot/efi so that grub will auto-detect
+- Installing essential packages
+	- Install with pacstrap on top of what is recommended in guide:
+		- sof-firmware -> sound
+		- base-devel -> pacman, gcc, etc.
+		- grub -> bootloading
+		- efibootmgr -> bootloading
+		- networkmanager -> networking
+		- vim -> you're going to want a text editor
+		- git -> pull .dotfiles after install
+- Fstab
+	- run `genfstab /mnt` first to make sure it looks good
+- Locale
+	- `en-US.UTF-8 UTF-8`
+- Creating user
+	- Do after setting root password
+	- `useradd -m -G wheel -s /bin/bash <uname>`
+	- `passwd <uname>`
+	- To make sudoer:
+		- `visudo`
+			- Uncomment line giving sudo permission to members of group wheel
+			- `su <uname>` to double check
+- Setup core services you'll want on first boot
+	- `systemctl enable NetworkManager`
+- Grub
+	- Bootloader
+	- `grub-install /dev/sda`
+	- `grub-mkconfig -o /boot/grub/grub.cfg`
+- exit chroot then `umount -a` and `reboot`
+- Login as user and install rest of configuration:
+	- git clone dotfiles
+	- run scripts for installation
+	- may require a reboot

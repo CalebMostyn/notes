@@ -1,0 +1,1 @@
+Torrent indexing proxy to get around CloudFlare. Newer (and better?) alternative to FlareSolverr, configured as a FlareSolverr instance in [[Prowlarr]]. Link to ["dashboard"](http://192.168.4.94:8191/)
