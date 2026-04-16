@@ -1,0 +1,3 @@
+Automatic file management for media server. Scans library files and transcodes where necessary. Link to [dashboard](http://192.168.4.98:8888).
+
+Right now only will run from 00:00-08:00. Currently set up to convert everything to H.265 and .mkv, as well as do other nice things like make English the default audio/subtitles. Any transcodings that will increase the size of the file are rejected. Should allow for everything to be downloaded/ripped at full quality (remux), as after its transcoded it should result in a very significant compression.

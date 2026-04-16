@@ -28,3 +28,8 @@ And had to edit the `.ovpn` file downloaded from Proton to use my credentials au
 `curl ipinfo.io/json` is useful for a quick check if the VPN is working.
 
 Set `Settings -> Advanced -> Network interface:` to the tunnel interface.
+
+Had a problem where IP was leaked. Seems to be due to DNS, which was still going through the pihole. Installing openresolv allowed the ProtonVPN systemd job to correctly set to the VPN's DNS automatically. Also setup a killswitch to ensure all traffic goes through the tunnel using iptables, saved to be persistent with iptables-persistent:
+```bash
+netfilter-persistent save # saves to /etc/iptables/rules.v4 
+```

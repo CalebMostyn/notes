@@ -1,0 +1,1 @@
+Automatic request management for radarr and sonarr. Integrated directly into client via [Moonfin](https://github.com/orgs/Moonfin-Client/repositories) plugin and TV app. Link to [dashboard](http://192.168.4.97:5055).

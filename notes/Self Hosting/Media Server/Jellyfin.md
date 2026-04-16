@@ -7,3 +7,7 @@ mp0: /mnt/media,mp=/mnt/media
 
 ## Todo
 - Buy GPU to enable hardware acceleration for faster transcoding and lighter CPU load
+- Setup Tdarr or Unmanic to automatically re-encode and compress files to save space
+	- Download things as remux (orignal, unmodified content)
+	- Transcode it to the preferred format
+		- Incurs a loss but likely will be equivalent or better quality to a smaller download and will take up less space

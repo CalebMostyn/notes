@@ -36,6 +36,9 @@ Automatic torrent indexer.
 ### [[Byparr]]
 Cloudflare bot-detection avoider.
 
+### [[Seerr]]
+Automatic request manager for Jellyfin/Radarr/Sonarr.
+
 ## Todo
 - Purchase quieter case fans
 - Purchase better router, managed switch
